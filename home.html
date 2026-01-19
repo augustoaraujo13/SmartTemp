@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTemp Pro | Busca Inteligente</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-default">
+
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Smart<span>Temp</span></h1>
+            <p>Clima preciso com busca inteligente</p>
+        </header>
+
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Ex: Japeri, Rio de Janeiro..." autocomplete="off">
+                <button id="search-btn">🔍</button>
+            </div>
+            <ul id="suggestions" class="suggestions-list hidden"></ul>
+        </div>
+
+        <div class="glass-card weather-card">
+            <div id="weather-content">
+                <div class="header-info">
+                    <h2 id="city-name">Sincronizando...</h2>
+                    <p id="date-now">---</p>
+                </div>
+                
+                <div class="temp-main">
+                    <img id="w-icon" src="https://openweathermap.org/img/wn/01d@4x.png" alt="clima">
+                    <h3 id="temp-number">--°</h3>
+                    <p id="description">Detectando localização...</p>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span>Sensação</span>
+                        <strong id="feels-like">--°</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Mín / Máx</span>
+                        <strong id="min-max">--/--</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Umidade</span>
+                        <strong id="humidity">--%</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Vento</span>
+                        <strong id="wind">-- km/h</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Visibilidade</span>
+                        <strong id="visibility">-- km</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Pressão</span>
+                        <strong id="pressure">-- hPa</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
